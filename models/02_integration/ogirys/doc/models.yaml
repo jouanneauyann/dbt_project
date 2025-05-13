@@ -1,0 +1,16 @@
+name: transformation_ogirys
+config-version: 2
+
+models:
+- name: ogirys__modalites_sejours
+  description: jointure des tables modalités et séjours
+  columns:
+    - name: modalite_id_sejour
+      description: blabla
+      tests:
+        - not_null
+    - name: id_modalite
+      tests:
+        - relationships:
+            to: ref('ogirys__modalites')
+            field: id
