@@ -42,11 +42,11 @@ models:
         +schema: INT_ACTIVITE
         #+post_hook:
         #+pre_hook:
-    03_exposition:
-      activite:
-        +schema: EXP_ACTIVITE
-        #+post_hook:
-        #+pre_hook:
+    # 03_exposition:
+    #   activite:
+    #     +schema: EXP_ACTIVITE
+    #     #+post_hook:
+    #     #+pre_hook:
 
       
   +persist_docs:
